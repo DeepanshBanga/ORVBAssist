@@ -149,6 +149,8 @@
   const app = firebase.initializeApp(firebaseConfig);
   const auth = firebase.auth();
   const db = firebase.firestore();
+  const storage = getStorage(app);
+  export { app, auth, db, storage };
 </script>
 <script src="js/firebase-config.js"></script>
 
